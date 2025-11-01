@@ -27,6 +27,3 @@ services:
     plan: free
     buildCommand: npm run build
     staticPublishPath: dist
-    routes:
-      - path: /*
-        destination: /index.html
