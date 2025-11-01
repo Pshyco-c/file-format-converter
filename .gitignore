@@ -1,0 +1,52 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# IMPORTANT: Keep node_modules for open-source users to run free converter
+# Don't ignore: node_modules
+# Don't ignore: dist
+# Don't ignore: dist-ssr
+
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment variables & sensitive files (IMPORTANT - Never commit these!)
+.env
+.env.local
+.env.*.local
+.env.production.local
+
+# Backend specific uploads (user files)
+backend/uploads/
+
+# OS generated files
+Thumbs.db
+.AppleDouble
+.LSOverride
+
+# IDE temporary files
+*.swp
+*.swo
+*~
+.vscode/settings.json
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
