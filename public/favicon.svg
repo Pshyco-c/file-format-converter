@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="30" fill="#3b82f6"/>
+  
+  <!-- Document icon -->
+  <rect x="18" y="14" width="28" height="36" rx="2" fill="white"/>
+  
+  <!-- Lines representing document text -->
+  <line x1="24" y1="22" x2="40" y2="22" stroke="#3b82f6" stroke-width="2" stroke-linecap="round"/>
+  <line x1="24" y1="28" x2="40" y2="28" stroke="#3b82f6" stroke-width="2" stroke-linecap="round"/>
+  <line x1="24" y1="34" x2="35" y2="34" stroke="#3b82f6" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Arrow indicating conversion -->
+  <path d="M 42 40 L 50 40 M 48 36 L 50 40 L 48 44" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
