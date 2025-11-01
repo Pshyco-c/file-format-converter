@@ -7,10 +7,9 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-# IMPORTANT: Keep node_modules for open-source users to run free converter
-# Don't ignore: node_modules
-# Don't ignore: dist
-# Don't ignore: dist-ssr
+node_modules
+dist
+dist-ssr
 
 *.local
 
