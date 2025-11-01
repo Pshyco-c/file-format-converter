@@ -23,7 +23,6 @@ services:
   - type: web
     name: file-converter-frontend
     env: static
-    region: oregon
     plan: free
     buildCommand: npm run build
     staticPublishPath: dist
