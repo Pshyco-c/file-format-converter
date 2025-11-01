@@ -1,0 +1,32 @@
+services:
+  - type: web
+    name: file-converter-backend
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: CONVERSION_SERVICE
+        value: convertapi
+      - key: CONVERTAPI_API_KEY
+        sync: false
+      - key: MONGODB_URI
+        sync: false
+      - key: CORS_ORIGIN
+        value: https://file-converter-frontend.onrender.com
+
+  - type: web
+    name: file-converter-frontend
+    env: static
+    region: oregon
+    plan: free
+    buildCommand: npm run build
+    staticPublishPath: dist
+    routes:
+      - path: /*
+        destination: /index.html
