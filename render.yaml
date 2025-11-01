@@ -23,6 +23,5 @@ services:
   - type: web
     name: file-converter-frontend
     env: static
-    plan: free
     buildCommand: npm run build
     staticPublishPath: dist
