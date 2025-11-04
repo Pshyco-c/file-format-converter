@@ -7,7 +7,8 @@ import { Button } from "@/components/ui/button";
 import { Zap } from "lucide-react";
 import { toast } from "sonner";
 
-const API_BASE_URL = 'http://localhost:5000/api';
+// Use environment variable if available, otherwise fallback to localhost
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
 
 const Index = () => {
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
